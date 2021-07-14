@@ -1,0 +1,13 @@
+server:
+  port: 9090
+
+jwk:
+  endpoint: http://192.168.5.1:8080/auth/realms/TestPKCE/protocol/openid-connect/certs
+
+logging:
+  level:
+    org.springframework.cloud.gateway: TRACE
+    org.springframework.http.server.reactive: DEBUG
+    org.springframework.web.reactive: DEBUG
+    reactor.ipc.netty: DEBUG
+    reactor.netty: DEBUG
